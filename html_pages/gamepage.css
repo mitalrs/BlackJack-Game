@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(31, 31, 31);;
+}
+.main-div{
+    height: 60vh;
+    width: 60vw;
+    margin: auto;
+    margin-top: 20vh;
+    background-color: rgb(0, 102, 0);
+    box-shadow: 20px 20px 8px 2px rgb(0 0 0 / 20%), 0 10px 20px 0 rgb(0 0 0 / 19%);
+    position: relative;
+}
+.pokerchips{
+    border: 2px solid black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 310px;
+    width: 630px;
+    box-shadow: 0 0 0 3px #282828 inset, 0 0 0 5px #969696 inset, 0 0 6px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background-color: rgb(0, 73, 62,0.75);
+    
+}
+.poker{
+  margin: 1em;
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5), 0 0 3px 0 rgba(0, 0, 0, 0.4) inset;
+  border-radius: 50%;
+  background-size: 151px 151px;
+  background-position: center center;
+}
+.poker:before{
+  
+    position: absolute;
+    content: "";
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    top: 12px;
+    left: 12px;
+    background-size: 151px 151px;
+    background-position: center center;
+}
+.poker:after {
+  z-index: 2;
+  position: absolute;
+  /* content: "25"; */
+  text-align: center;
+  font: bold 34px/74px Arial;
+  white-space: pre;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  top: 22px;
+  left: 22px;
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.3), 1px 1px 0px rgba(255, 255, 255, 0.2);
+}
+
+
+/* white poker chip */
+.white{
+        background-image: linear-gradient(0deg, transparent 0, transparent 67.5px, #fff 67.5px, #fff 83.5px, transparent 83.5px, transparent 151px), linear-gradient(60deg, transparent 0, transparent 97.4304px, #fff 97.4304px, #fff 113.4304px, transparent 113.4304px, transparent 151px), linear-gradient(120deg, #dddddd 0, #dddddd 97.4304px, #fff 97.4304px, #fff 113.4304px, #dddddd 113.4304px, #dddddd 151px);
+}
+.white:before {
+  border: 8px solid #C1C1C1;
+  background-image: linear-gradient(0deg, transparent 0, transparent 69.5px, #EBEBEB 69.5px, #EBEBEB 81.5px, transparent 81.5px, transparent 151px), linear-gradient(30deg, transparent 0, transparent 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, transparent 110.7104px, transparent 151px), linear-gradient(60deg, transparent 0, transparent 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, transparent 110.7104px, transparent 151px), linear-gradient(90deg, transparent 0, transparent 69.5px, #EBEBEB 69.5px, #EBEBEB 81.5px, transparent 81.5px, transparent 151px), linear-gradient(120deg, transparent 0, transparent 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, transparent 110.7104px, transparent 151px), linear-gradient(150deg, #C1C1C1 0, #C1C1C1 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, #C1C1C1 110.7104px, #C1C1C1 151px);
+}
+.white:after {
+  content: "1";
+  background: #C1C1C1;
+  color: #dddddd;
+} 
+
+
+/* red poker chip  */
+.red {
+  background-image: linear-gradient(0deg, transparent 0, transparent 67.5px, #fff 67.5px, #fff 83.5px, transparent 83.5px, transparent 151px), linear-gradient(60deg, transparent 0, transparent 97.4304px, #fff 97.4304px, #fff 113.4304px, transparent 113.4304px, transparent 151px), linear-gradient(120deg, #db3030 0, #db3030 97.4304px, #fff 97.4304px, #fff 113.4304px, #db3030 113.4304px, #db3030 151px);
+}
+.red:before {
+  border: 8px solid #800000;
+  background-image: linear-gradient(0deg, transparent 0, transparent 69.5px, #EBEBEB 69.5px, #EBEBEB 81.5px, transparent 81.5px, transparent 151px), linear-gradient(30deg, transparent 0, transparent 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, transparent 110.7104px, transparent 151px), linear-gradient(60deg, transparent 0, transparent 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, transparent 110.7104px, transparent 151px), linear-gradient(90deg, transparent 0, transparent 69.5px, #EBEBEB 69.5px, #EBEBEB 81.5px, transparent 81.5px, transparent 151px), linear-gradient(120deg, transparent 0, transparent 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, transparent 110.7104px, transparent 151px), linear-gradient(150deg, #db3030 0, #db3030 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, #db3030 110.7104px, #db3030 151px);
+}
+.red:after {
+  content: "5";
+  background: #800000;
+  color: #db3030;
+}
+
+
+/* blue poker chip */
+.blue {
+  background-image: linear-gradient(0deg, transparent 0, transparent 67.5px, #fff 67.5px, #fff 83.5px, transparent 83.5px, transparent 151px), linear-gradient(60deg, transparent 0, transparent 97.4304px, #fff 97.4304px, #fff 113.4304px, transparent 113.4304px, transparent 151px), linear-gradient(120deg, #3030db 0, #3030db 97.4304px, #fff 97.4304px, #fff 113.4304px, #3030db 113.4304px, #3030db 151px);
+}
+.blue:before {
+  border: 8px solid #000099;
+  background-image: linear-gradient(0deg, transparent 0, transparent 69.5px, #EBEBEB 69.5px, #EBEBEB 81.5px, transparent 81.5px, transparent 151px), linear-gradient(30deg, transparent 0, transparent 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, transparent 110.7104px, transparent 151px), linear-gradient(60deg, transparent 0, transparent 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, transparent 110.7104px, transparent 151px), linear-gradient(90deg, transparent 0, transparent 69.5px, #EBEBEB 69.5px, #EBEBEB 81.5px, transparent 81.5px, transparent 151px), linear-gradient(120deg, transparent 0, transparent 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, transparent 110.7104px, transparent 151px), linear-gradient(150deg, #3030db 0, #3030db 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, #3030db 110.7104px, #3030db 151px);
+}
+.blue:after {
+  content: "50";
+  background: #000099;
+  color: #3030db;
+}
+
+
+/* green poker chip */
+.green {
+  background-image: linear-gradient(0deg, transparent 0, transparent 67.5px, #fff 67.5px, #fff 83.5px, transparent 83.5px, transparent 151px), linear-gradient(60deg, transparent 0, transparent 97.4304px, #fff 97.4304px, #fff 113.4304px, transparent 113.4304px, transparent 151px), linear-gradient(120deg, #1dbf1d 0, #1dbf1d 97.4304px, #fff 97.4304px, #fff 113.4304px, #1dbf1d 113.4304px, #1dbf1d 151px);
+}
+.green:before {
+  border: 8px solid #008000;
+  background-image: linear-gradient(0deg, transparent 0, transparent 69.5px, #EBEBEB 69.5px, #EBEBEB 81.5px, transparent 81.5px, transparent 151px), linear-gradient(30deg, transparent 0, transparent 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, transparent 110.7104px, transparent 151px), linear-gradient(60deg, transparent 0, transparent 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, transparent 110.7104px, transparent 151px), linear-gradient(90deg, transparent 0, transparent 69.5px, #EBEBEB 69.5px, #EBEBEB 81.5px, transparent 81.5px, transparent 151px), linear-gradient(120deg, transparent 0, transparent 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, transparent 110.7104px, transparent 151px), linear-gradient(150deg, #1dbf1d 0, #1dbf1d 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, #1dbf1d 110.7104px, #1dbf1d 151px);
+}
+.green:after {
+  content: "25";
+  background: #008000;
+  color: #1dbf1d;
+}
+
+
+/* purple poker chip */
+.Purple {
+  background-image: linear-gradient(0deg, transparent 0, transparent 67.5px, #fff 67.5px, #fff 83.5px, transparent 83.5px, transparent 151px), linear-gradient(60deg, transparent 0, transparent 97.4304px, #fff 97.4304px, #fff 113.4304px, transparent 113.4304px, transparent 151px), linear-gradient(120deg, #db9bf2 0, #db9bf2 97.4304px, #fff 97.4304px, #fff 113.4304px, #db9bf2 113.4304px, #db9bf2 151px);
+}
+.Purple:before {
+  border: 8px solid #b839e6;
+  background-image: linear-gradient(0deg, transparent 0, transparent 69.5px, #EBEBEB 69.5px, #EBEBEB 81.5px, transparent 81.5px, transparent 151px), linear-gradient(30deg, transparent 0, transparent 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, transparent 110.7104px, transparent 151px), linear-gradient(60deg, transparent 0, transparent 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, transparent 110.7104px, transparent 151px), linear-gradient(90deg, transparent 0, transparent 69.5px, #EBEBEB 69.5px, #EBEBEB 81.5px, transparent 81.5px, transparent 151px), linear-gradient(120deg, transparent 0, transparent 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, transparent 110.7104px, transparent 151px), linear-gradient(150deg, #db9bf2 0, #db9bf2 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, #db9bf2 110.7104px, #db9bf2 151px);
+}
+.Purple:after {
+  content: "500";
+  background: #b839e6;
+  color: #db9bf2;
+}
+
+
+/* yellow poker chip */
+.yellow {
+  background-image: linear-gradient(0deg, transparent 0, transparent 67.5px, #fff 67.5px, #fff 83.5px, transparent 83.5px, transparent 151px), linear-gradient(60deg, transparent 0, transparent 97.4304px, #fff 97.4304px, #fff 113.4304px, transparent 113.4304px, transparent 151px), linear-gradient(120deg, #f7e16f 0, #f7e16f 97.4304px, #fff 97.4304px, #fff 113.4304px, #f7e16f 113.4304px, #f7e16f 151px);
+}
+.yellow:before {
+  border: 8px solid #e8ca2e;
+  background-image: linear-gradient(0deg, transparent 0, transparent 69.5px, #EBEBEB 69.5px, #EBEBEB 81.5px, transparent 81.5px, transparent 151px), linear-gradient(30deg, transparent 0, transparent 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, transparent 110.7104px, transparent 151px), linear-gradient(60deg, transparent 0, transparent 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, transparent 110.7104px, transparent 151px), linear-gradient(90deg, transparent 0, transparent 69.5px, #EBEBEB 69.5px, #EBEBEB 81.5px, transparent 81.5px, transparent 151px), linear-gradient(120deg, transparent 0, transparent 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, transparent 110.7104px, transparent 151px), linear-gradient(150deg, #f7e16f 0, #f7e16f 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, #f7e16f 110.7104px, #f7e16f 151px);
+}
+.yellow:after {
+  content: "1000";
+  background: #e8ca2e;
+  color: #f7e16f;
+}
+
+
+/* black poker chip */
+.black {
+  background-image: linear-gradient(0deg, transparent 0, transparent 67.5px, #fff 67.5px, #fff 83.5px, transparent 83.5px, transparent 151px), linear-gradient(60deg, transparent 0, transparent 97.4304px, #fff 97.4304px, #fff 113.4304px, transparent 113.4304px, transparent 151px), linear-gradient(120deg, #222222 0, #222222 97.4304px, #fff 97.4304px, #fff 113.4304px, #222222 113.4304px, #222222 151px);
+}
+.black:before {
+  border: 8px solid #000000;
+  background-image: linear-gradient(0deg, transparent 0, transparent 69.5px, #EBEBEB 69.5px, #EBEBEB 81.5px, transparent 81.5px, transparent 151px), linear-gradient(30deg, transparent 0, transparent 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, transparent 110.7104px, transparent 151px), linear-gradient(60deg, transparent 0, transparent 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, transparent 110.7104px, transparent 151px), linear-gradient(90deg, transparent 0, transparent 69.5px, #EBEBEB 69.5px, #EBEBEB 81.5px, transparent 81.5px, transparent 151px), linear-gradient(120deg, transparent 0, transparent 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, transparent 110.7104px, transparent 151px), linear-gradient(150deg, #000000 0, #000000 98.7104px, #EBEBEB 98.7104px, #EBEBEB 110.7104px, #000000 110.7104px, #000000 151px);
+}
+.black:after {
+  content: "100";
+  background: #000000;
+  color: #222222;
+}
+
+
+/* bank creadit */
+#bank{
+  border: 1px solid black;
+  border-bottom: 0;
+  border-radius: 5px;
+  background-color: rgb(0, 73, 62,0.75);
+  /* z-index: 1; */
+  height: 100px;
+  width: 200px;
+  color: white;
+  position: absolute;
+  top:29%;
+  box-shadow: 0 0 0 3px #282828 inset, 0 0 0 5px #969696 inset, 0 0 6px rgba(255, 255, 255, 0.2);
+  text-align: center;
+  font-weight: 900;
+  font-size: 25px;
+  padding-top: 20px;
+}
+

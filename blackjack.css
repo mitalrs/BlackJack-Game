@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(0, 102, 0);;
+    background-color: rgb(0, 102, 0);
 }
 .home-div{
     height: 60vh;
@@ -20,11 +20,11 @@ body{
     position: relative;
 }
 h1{
-    margin: 20px;
+    margin: 2px;
     padding: 30px;
     color: rgb(224, 181, 37);
     font-size: 2.5em;
-    animation: bj 5s infinite;
+    animation: bj 12s infinite;
 }
 @keyframes bj {
     /* from {font-size: 2.5em;}

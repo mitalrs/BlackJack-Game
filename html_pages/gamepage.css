@@ -20,8 +20,8 @@ body{
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 310px;
-    width: 630px;
+    height: 155px;
+    width: 1100px;
     box-shadow: 0 0 0 3px #282828 inset, 0 0 0 5px #969696 inset, 0 0 6px rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     background-color: rgb(0, 73, 62,0.75);
@@ -70,6 +70,7 @@ body{
 /* white poker chip */
 .white{
         background-image: linear-gradient(0deg, transparent 0, transparent 67.5px, #fff 67.5px, #fff 83.5px, transparent 83.5px, transparent 151px), linear-gradient(60deg, transparent 0, transparent 97.4304px, #fff 97.4304px, #fff 113.4304px, transparent 113.4304px, transparent 151px), linear-gradient(120deg, #dddddd 0, #dddddd 97.4304px, #fff 97.4304px, #fff 113.4304px, #dddddd 113.4304px, #dddddd 151px);
+        /* animation-name: wp; */
 }
 .white:before {
   border: 8px solid #C1C1C1;
@@ -191,3 +192,37 @@ body{
   padding-top: 20px;
 }
 
+
+
+.pokerwhite{
+ /* animation-name: wp;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards; */
+  animation: wp 3s;
+}
+@keyframes wp {
+  from {
+        
+  }
+  to {
+    margin-bottom: 200px;
+    margin-left: 200px;
+  }
+}
+
+
+#getplay{
+  color: black;
+  text-align: center;
+  padding: 20px;
+  font-weight: 300px;
+    border: 2px solid black;
+    height: 60px;
+    width: 150px;
+   position: absolute;
+   right: 20px;
+   top: 200px;
+   background-color: rgba(144, 144, 252, 0.70);
+}

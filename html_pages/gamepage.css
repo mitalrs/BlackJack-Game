@@ -271,3 +271,27 @@ img{
  display: inline-block;
  position: absolute;
 }
+
+.exitflashdiv{
+   height: 300px;
+   width: 500px;
+   border: 2px solid #000000;
+   position: absolute;
+   top: 20%;
+   left: 30%;
+   background-color: #000000;
+   color: white;
+}
+.exitflashdiv:after{
+  content: "CASH WON:..........0";
+  content: "ADDED CARD:..........0";
+  content: "HIGHEST BANK:..........0";
+  content: "RANK:..........0";
+  content: "TOTAL SOCURE:..........0";
+}
+#cashoutimg{
+   height: 400px;
+   width: 700px;
+   margin-top: -194px;
+   margin-left: -95px;
+}

@@ -4,22 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlackJack-Game-play</title>
+    <title>BlackJack Game play</title>
     <link rel="stylesheet" href="gamepage.css">
 </head>
 <body>
     <div class="main-div">
         <img src="doller.png" alt="">
-        <div id="exit-div">
-            CASH OUT</div>
-            <div class="exitflashdiv">
-                <img id="cashoutimg" src="Untitled design.png" alt="">
+        <div id="exit-div" onclick="cashout()">CASH OUT</div>
+            <div id="exitflashdiv">
+                <!-- class="exitflashdiv" -->
+                <!-- <img id="cashoutimg" src="Untitled design.png" alt=""> -->
+                <div id="imgdiv"></div>
+                <p id="p1"></p>
+                <p id="p2"></p>
+                <p id="p3"></p>
+                <p id="p4"></p>
+                <p id="p5"></p>
             </div>
+
+
         <div id="bank">Bank Creadit:
-            <br>
-            $1000</div>
+            <br> $1000
+        </div>
+
+
             <p id="bet"></p>
             <div id="getplay"></div>
+
+
         <div class="pokerchips">
             <div onclick="white()" class="poker white" id="wt"></div>
             <div class="poker red"></div>

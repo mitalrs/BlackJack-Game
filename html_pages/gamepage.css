@@ -10,6 +10,7 @@ body{
     height: 60vh;
     width: 60vw;
     margin: auto;
+    margin-top: 30%;
     margin-top: 20vh;
     background-color: rgb(0, 102, 0);
     box-shadow: 20px 20px 8px 2px rgb(0 0 0 / 20%), 0 10px 20px 0 rgb(0 0 0 / 19%);
@@ -190,6 +191,7 @@ body{
   font-weight: 900;
   font-size: 25px;
   padding-top: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
@@ -218,7 +220,8 @@ body{
   text-align: center;
   font-size: 20px;
   font-weight: bold;
-  padding: 15px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 17px;
   border: 2px solid rgb(54, 54, 54);
   height: 60px;
   width: 150px;
@@ -243,6 +246,7 @@ body{
 .betc{
   font-size: 25px;
   font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: white;
   position: absolute;
   right: 560px;
@@ -273,25 +277,76 @@ img{
 }
 
 .exitflashdiv{
-   height: 300px;
-   width: 500px;
+   height: 290px;
+   width: 370px;
    border: 2px solid #000000;
+   border-radius: 7px;
    position: absolute;
-   top: 20%;
-   left: 30%;
+   top: 17%;
+   left: 35%;
    background-color: #000000;
    color: white;
+   /* text-align: center; */
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.exitflashdiv:after{
-  content: "CASH WON:..........0";
-  content: "ADDED CARD:..........0";
-  content: "HIGHEST BANK:..........0";
-  content: "RANK:..........0";
-  content: "TOTAL SOCURE:..........0";
+.p1{
+  margin-top: -7%;
+  text-align: center;
+  /* font-size: 1e; */
+  font-size: 1.2em;
+  z-index: 1;
 }
-#cashoutimg{
-   height: 400px;
-   width: 700px;
-   margin-top: -194px;
-   margin-left: -95px;
+.p2{
+  margin-top: 4%;
+  text-align: center;
+  font-size: 1.2em;
+}
+.p3{
+  margin-top: 4%;
+  text-align: center;
+  font-size: 1.2em;
+}
+.p4{
+  margin-top: 4%;
+  text-align: center;
+  font-size: 1.2em;
+}
+.p5{
+  margin-top: 4%;
+  text-align: center;
+  font-size: 1.2em;
+}
+.p1:after{
+  content: "CASH WON:...............0";
+}
+.p2:after{
+  content: "ADDED CARD:...........0";
+}
+.p3:after{
+  content: "HIGHEST BANK:........0";
+}
+.p4:after{
+  content: "RANK:.-62px........................0";
+}
+.p5:after{
+  content: "TOTAL SOCURE:........0";
+}
+
+.imgdiv{
+  /* background-image: url("Untitled design.png"); */
+  background: url("Untitled design.png") no-repeat center top;
+  background-size: cover;
+}
+#imgdiv{
+  /* border: 2px solid black;
+  height: 300px;
+  width: 534px;
+  margin-top: -145px;
+  margin-left: -80px; */
+
+  order: 2px solid black;
+    height: 270px;
+    width: 500px;
+    margin-top: -140px;
+    margin-left: -62px;
 }

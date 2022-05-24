@@ -221,7 +221,8 @@ body{
   font-weight: bold;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   padding: 17px;
-  border: 2px solid rgb(54, 54, 54);
+  /* border: 2px solid rgb(54, 54, 54); */
+  border-style: none;
   height: 60px;
   width: 150px;
   position: absolute;
@@ -235,7 +236,7 @@ body{
   content: "DEAL";
 }
 .getplayc:hover{
-  background-color: rgba(1, 1, 143, 0.7);
+  background-color: rgba(25, 25, 182, 0.7);
   color: white;
   content: "DEAL";
 }
@@ -325,7 +326,7 @@ img{
   content: "HIGHEST BANK:........0";
 }
 .p4:after{
-  content: "RANK:.-62px........................0";
+  content: "RANK:.........................0";
 }
 .p5:after{
   content: "TOTAL SOCURE:........0";

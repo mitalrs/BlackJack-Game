@@ -5,7 +5,10 @@
 }
 body{
     background-color: rgb(0, 102, 0);
+    width: 100vh;
+    height: 100vw;
 }
+
 .home-div{
     height: 60vh;
     width: 60vw;

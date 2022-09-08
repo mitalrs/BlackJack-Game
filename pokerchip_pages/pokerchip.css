@@ -232,6 +232,10 @@ body{
   border-radius: 6px;
   box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.15),0px 1px 1px rgba(0, 0, 0, 0.15);
 }
+.getplayc::before{
+  background-color: #008000;
+  border: 0px solid #008000;
+}
 .getplayc:after{
   content: "DEAL";
 }

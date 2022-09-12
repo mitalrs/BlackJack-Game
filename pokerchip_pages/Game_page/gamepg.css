@@ -28,6 +28,7 @@ body{
     height: 175px;
     width: 125px;
     margin: auto;
+    display: flex;
     
 }
 
@@ -35,7 +36,8 @@ body{
     /* position: absolute; */
     height: 175px;
     width: 125px;
-    margin: 1px;
+    margin: auto;
+    display: flex;
 }
 
 #hit{
@@ -48,4 +50,6 @@ body{
     height: 50px;
     font-size: 20px;
 }
-
+#hidden{
+    flex:1;
+}

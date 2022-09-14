@@ -1,5 +1,5 @@
 var dealerSum = 0;
-yourSum = 0;
+var yourSum = 0;
 
 var dealerAceCount = 0;
 var yourAceCount = 0;
@@ -96,7 +96,7 @@ function stay(){
     yourSum = reduceAce(yourSum, yourAceCount);
 
     canHit = false;
-    document.getElementById("hidden").src = "./cards/"+hidden+".png";
+    document.getElementById("hidden").src = "./PNG/"+hidden+".png";
 
     let message="";
     if(yourSum>21){
